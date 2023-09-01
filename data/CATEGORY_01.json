@@ -1,0 +1,31 @@
+{
+  "data": {
+    "CATEGORYID": 7597653,
+    "CATEGORYTYPEID": 2,
+    "CATEGORYNAME": "ABC",
+    "CATEGORYDESCRIPTION": "Abc",
+    "CATEGORYSTATUS": 0,
+    "ESTABLISHMENTTYPE": null,
+    "ESTABLISHMENTKEY": null,
+    "PARENTID": 2,
+    "GRANDPARENTID": null,
+    "GREATGRANDPARENTID": null,
+    "IMAGEPATH": null,
+    "LASTUPDATED": "2017-07-19T16:21:40Z",
+    "LASTUPDATEDBY": null,
+    "CREATEDATE": "2017-07-19T16:21:40Z",
+    "DISPLAYORDER": 0,
+    "CLIENT_ID": null,
+    "DATETIME_ADDED": "2020-12-15T22:14:26Z",
+    "DATETIME_MODIFIED": "2020-12-15T22:14:26Z",
+    "ID": 18
+  },
+  "metadata": {
+    "timestamp": "2021-08-29T23:03:58.704640Z",
+    "record-type": "data",
+    "operation": "load",
+    "partition-key-type": "primary-key",
+    "schema-name": "AEG_LOSANGELES",
+    "table-name": "CATEGORY"
+  }
+}

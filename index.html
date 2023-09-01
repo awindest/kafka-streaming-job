@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--                                  
+╭━━╮╱╱╱╱╭╮╱╱╱╱╱╭╮╱╭╮╱╱╱╱╱╭╮            ━╮ ╭━
+╰┫┣╯╱╱╱╱┃┃╱╱╱╱╭╯╰╮┃┃╱╱╱╱╱┃┃             | |
+╱┃┃╭━╮╭━╯┣━━┳━┻╮╭╯┃┃╱╱╭━━┫╰━┳━━╮       ╱ o \
+╱┃┃┃╭╮┫╭╮┃┃━┫━━┫┃╱┃┃╱╭┫╭╮┃╭╮┃━━┫      ╱_____\
+╭┫┣┫┃┃┃╰╯┃┃━╋━━┃╰╮┃╰━╯┃╭╮┃╰╯┣━━┃     ╱    o  \  
+╰━━┻╯╰┻━━┻━━┻━━┻━╯╰━━━┻╯╰┻━━┻━━╯    (__o______)  
+
+Yet another science experiment from Indest Labs.
+
+Recommend viewing in Visual Source Code.
+-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+
+    <title>Kafka Streaming Job</title>
+    <meta name="description" content="A simple demonstration of Talend's streaming capabilities using Kafka.">
+
+    <style>
+        html {
+            margin: 0;
+            padding: 5em;
+        }
+
+        body {
+            margin: 40;
+            padding: 0;
+            background: #ffffff;
+        }
+
+        div {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2em;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Kafka Streaming Job</h1>
+
+        <h2>Introduction</h2>
+        <p>These Talend jobs 1) create a Kafka topic, 2) wait for messages to appear on that topic (Consumer) and 3)
+            read a list of JSON files, extract the contents, convert to a Kafka message and then send the message to the
+            Kafka topic (Producer).</p>
+        <p>
+        <h2>Setup</h2>
+        <h3>Download the data files and the job files.</h3>
+        <a class="pdflink" href="">Github location to download the files.</a>
+
+        <h3>Import the jobs into Talend Studio. </h3>
+        <h4>(As of this writing you could download it from here:
+            <a
+                href="https://www.talend.com/lp/open-studio-for-data-integration/">https://www.talend.com/lp/open-studio-for-data-integration/)</a>
+        </h4>
+        <h3>Copy the data to a location on your machine and then point to that file location in the Kafka Producer job
+            (the parameter is called, "Directory", in the tFileList component).
+        </h3>
+        <h3>Ensure the Kafka topic has the same name across all three jobs.</h3>
+        <h2>To Install Kafka:</h2>
+        Download Kafka (<a href="https://kafka.apache.org/">https://kafka.apache.org/</a>) and install it (Windows is
+        tricky):<br>
+        <code>
+    $ tar -xzf kafka_2.13-3.2.0.tgz<br>
+    $ cd kafka_2.13-3.2.0<br>
+    # Start the ZooKeeper service<br>
+    # Note: Soon, ZooKeeper will no longer be required by Apache Kafka.<br>
+    $ bin/zookeeper-server-start.sh config/zookeeper.properties<br>
+    # Start the Kafka broker service<br>
+    $ bin/kafka-server-start.sh config/server.properties<br>
+</code>
+        <h2>Run the jobs in the following sequence:</h2>
+        <p>
+            Now once all services have successfully launched, run this job to create a topic.
+        </p>
+        <center>
+            <img src="img/kafkasetup.png" style="width:800px"
+                title="A simple demonstration of Talend's streaming capabilities using Kafka.">
+        </center>
+        <p>
+            Start this job to consume Kafka messages:
+        </p>
+        <center>
+            <img src="img/kafkaconsumer.png" style="width:800px">
+        </center>
+        <p>
+            Then run this job to produce the Kafka messages. Return to the job above to see the received Kafka messages.
+        </p>
+
+        <center>
+            <img src="img/kafkaproducer.png" style="width:800px">
+        </center>
+    </div>
+
+</body>
+
+</html>

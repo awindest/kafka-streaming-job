@@ -1,0 +1,27 @@
+{
+  "data": {
+    "ID": 302385872,
+    "PAYMENT_ID": 626910736,
+    "ORDER_ITEM_ID": 323722250,
+    "PRODUCT_ID": 851953810,
+    "SETTLEMENT_CODE_ID": 850887292,
+    "DIST_DATE": "2021-11-12T13:06:11Z",
+    "USER_ID": "testuser",
+    "OUTLET_ID": 75,
+    "CHANNEL_ID": 2,
+    "AMOUNT": 28,
+    "FULLY_PAID_QTY": 1,
+    "FULLY_PAID_AMOUNT": 28,
+    "DATETIME_ADDED": "2021-11-12T13:06:11Z",
+    "DATETIME_MODIFIED": "2021-11-12T13:06:11Z"
+  },
+  "metadata": {
+    "timestamp": "2021-11-12T19:07:20.376059Z",
+    "record-type": "data",
+    "operation": "insert",
+    "partition-key-type": "primary-key",
+    "schema-name": "AEG_LOSANGELES",
+    "table-name": "PAYMENT_DISTRIBUTION",
+    "transaction-id": 393228
+  }
+}

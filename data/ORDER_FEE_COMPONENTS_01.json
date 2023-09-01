@@ -1,0 +1,30 @@
+{
+  "data": {
+    "ORDER_FEE_ID": null,
+    "COMPONENT_ID": 850936822,
+    "UNIT_COST": 4.14,
+    "ORDER_ITEM_ID": 323722258,
+    "FEE_ID": null,
+    "FEE_NAME": null,
+    "FEE_COMPONENT_TYPE_NAME": null,
+    "FEE_COMPONENT_TYPE_ID": null,
+    "FEE_DESCRIPTION": null,
+    "COMPONENT_NAME": null,
+    "APPLICATION_METHOD": null,
+    "CALCULATED_AMOUNT": null,
+    "CALCULATION_METHOD": null,
+    "CALCULATION_RATE": null,
+    "REVENUE_CENTER_ID": null,
+    "DATETIME_ADDED": "2021-11-12T13:06:26Z",
+    "DATETIME_MODIFIED": "2021-11-12T13:06:26Z"
+  },
+  "metadata": {
+    "timestamp": "2021-11-12T19:07:20.379836Z",
+    "record-type": "data",
+    "operation": "insert",
+    "partition-key-type": "primary-key",
+    "schema-name": "AEG_LOSANGELES",
+    "table-name": "ORDER_FEE_COMPONENTS",
+    "transaction-id": 1376268
+  }
+}
